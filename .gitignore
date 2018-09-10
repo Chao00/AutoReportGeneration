@@ -1,0 +1,7 @@
+
+*.xlsx
+node_modules
+logs
+config.json
+jsreport.json
+URLS.json

@@ -1,0 +1,254 @@
+html, body {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    color: #555;
+    color: #7c8891;
+    font: 16px/22px "Proxima Nova", sans-serif;
+    background: #ebedee;
+    padding: 50px;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 420px) {
+    body {
+        padding: 10px;
+    }
+}
+p{
+    font-family: 'Cardo', serif;
+    font-size: 20px;
+    color: #4f4212;
+}
+
+h1 {
+    margin-top: 10px;
+}
+#Title{
+    margin-top: 30px;
+    font-family: 'Metamorphous', cursive;
+}
+
+h1 {
+    line-height: 30px;
+    color: #5e6f7c;
+    font-family: 'Cardo', serif;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        height: 100%;
+    }
+}
+
+.container {
+    opacity: 0;
+    transition: opacity 1s ease, -webkit-transform 1s ease;
+    transition: transform 1s ease, opacity 1s ease;
+    transition: transform 1s ease, opacity 1s ease, -webkit-transform 1s ease;
+    -webkit-transform: translateY(-40px);
+    transform: translateY(-40px);
+    position: relative;
+    box-sizing: border-box;
+    width: 80%;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 700px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+}
+
+.container.fadeIn {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        min-width: 350px;
+    }
+}
+
+.container > div {
+    box-sizing: border-box;
+    padding: 50px 30px;
+}
+
+@media (max-width: 420px) {
+    .container > div {
+        padding: 40px 30px !important;
+    }
+}
+
+.profile {
+    position: absolute;
+    text-align: center;
+    width: 200px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5) url(https://s-media-cache-ak0.pinimg.com/736x/f6/35/20/f63520cc780b82c25fd91559b12f3cf6.jpg) no-repeat top;
+    height: 100%;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.profile .meta {
+    position: relative;
+    z-index: 1;
+}
+
+.profile .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+}
+
+.profile .avatar {
+    width: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+.profile h2 {
+    font-size: 22px;
+    margin-bottom: 2px;
+}
+
+.profile .social {
+    padding-top: 20px;
+}
+
+.profile .social i {
+    margin: 0 5px;
+}
+
+.profile a {
+    color: #fff;
+}
+
+.portfolio {
+    margin-left: 200px;
+    padding: 50px !important;
+}
+
+@media (max-width: 670px) {
+    .profile {
+        position: relative;
+        width: 100%;
+        background-size: cover;
+    }
+
+    .profile h2 {
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+
+    .avatar {
+        width: 80px !important;
+    }
+
+    .portfolio {
+        margin: 0;
+    }
+}
+
+.footer {
+    color: #cfd4d7;
+    padding: 20px 0;
+}
+
+.footer .fa {
+    font-size: 12px;
+    padding: 0 5px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.label {
+    display: normal;
+    color: #f9f9fa;
+    font-size: 11px;
+    padding: 4px 8px;
+    border-radius: 3px;
+    background: #dadee0;
+}
+.sub-main{
+    width: 10%;
+    /*margin:10px;*/
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+#button-three {
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Lobster', cursive;
+    font-size:22px;
+    margin: 0 0 0 80px;
+    position: relative;
+    background-color: #96621e;
+    border: none;
+    padding: 20px;
+    width: 120px;
+    height: 60px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+#button-three:hover{
+    background:#fff;
+    box-shadow:0px 2px 10px 5px #97B1BF;
+    color:#000;
+}
+
+#button-three:after {
+    content: "";
+    background: #f1c40f;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+#button-three:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+button{
+    color:#fff;
+    text-align: center;
+    padding: 20px;
+}
+

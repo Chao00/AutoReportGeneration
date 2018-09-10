@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="/stylesheets/finishPage.css">
+<div class="container text-center">
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+            <div class="thanks-wrap">
+
+                <div class="checkmark">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 161.2 161.2">
+                        <circle class="path" fill="none" stroke="#fcc400" stroke-width="4" stroke-miterlimit="10"
+                                cx="80.6" cy="80.6" r="62.1"/>
+                        <path class="path" fill="none" stroke="#fcc400" stroke-width="6" stroke-linecap="round"
+                              stroke-miterlimit="10" d="M113 52.8l-38.9 55.6-25.9-22"/>
+                        <circle class="spin" fill="none" stroke="#555555" stroke-width="4" stroke-miterlimit="10"
+                                stroke-dasharray="12.2175,12.2175" cx="80.6" cy="80.6" r="73.9"/>
+                    </svg>
+                </div>
+                <% if(status === "wait") { %>
+                <h1>Report will be sent to you shortly !</h1>
+                <% } else { %>
+                <h1>Report has been sent!</h1>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</div>
